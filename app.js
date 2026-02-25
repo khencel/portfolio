@@ -7,7 +7,7 @@ const projects = [
     live: "https://job---sapo.com/",
     // repo: "https://github.com/khencel/job-matching",
     tech: ["Next.js", "Python", "MySQL", "React.js", "Redux","Email Gateway"],
-    description: "A matching service that connects employers, job seekers, and workplaces.",
+    // description: "A matching service that connects employers, job seekers, and workplaces.",
     notes: [
       "Role: Full-stack",
       "Highlights: Auth, admin panel, multi-step forms",
@@ -20,8 +20,30 @@ const projects = [
     type: "website",
     live: "https://www.metropacifichealth.com/",
     repo: "",
-    tech: ["React", "Laravel", "Stripe/PayPal"],
-    description: "E-commerce storefront with product management and checkout integration.",
+    tech: ["Laravel Nova", "MySQL", "PHP", "Bootstrap","JavaScript"],
+    // description: "Largest group of private hospitals and other healthcare facilities in the Philippines, with 29 hospitals like Makati Medical Center, Cardinal Santos Medical Center, Asian Hospital and Medical Center, Riverside Medical Center, and Davao Doctors Hospital, as well as 36 outpatient care Centers, 6 cancer care centers, 2 allied health colleges, and a centralized laboratory – all of them embodying medical excellence and providing compassionate care.",
+    notes: ["Role: Full-stack", "Highlights: Orders, payments, inventory"],
+  },
+  {
+    id: "p3",
+    title: "C2M3I",
+    client: "Concept Machine",
+    type: "website",
+    live: "https://c2m3i.com/",
+    repo: "",
+    tech: ["Laravel Nova", "MySQL", "PHP", "Bootstrap","JavaScript"],
+    // description: "E-commerce storefront with product management and checkout integration.",
+    notes: ["Role: Full-stack", "Highlights: Orders, payments, inventory"],
+  },
+  {
+    id: "p4",
+    title: "Just Add Water",
+    client: "Concept Machine",
+    type: "website",
+    live: "https://justaddwater.com.ph/",
+    repo: "",
+    tech: ["Laravel Nova", "MySQL", "PHP", "Bootstrap","JavaScript"],
+    // description: "E-commerce storefront with product management and checkout integration.",
     notes: ["Role: Full-stack", "Highlights: Orders, payments, inventory"],
   }
 ];
@@ -101,7 +123,7 @@ function render(list){
       <div class="project__actions">
         <a class="btn" href="${p.live}" target="_blank" rel="noreferrer">Live</a>
         ${p.repo ? `<a class="btn btn--ghost" href="${p.repo}" target="_blank" rel="noreferrer">Code</a>` : ""}
-        <button class="btn btn--ghost" data-open="${p.id}">Details</button>
+       
       </div>
     `;
 
