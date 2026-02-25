@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Khenneth S. Alaiza — Portfolio</title>
+  <meta name="description" content="Portfolio compilation of websites and web apps built by Khenneth S. Alaiza." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__name">Khenneth Alaiza</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn--ghost">Contact</a>
+      </nav>
+
+      <button class="iconbtn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Software Developer • Web Apps • E-commerce</p>
+          <h1 class="h1">
+            Portfolio compilation of websites & systems I built.
+          </h1>
+          <p class="sub">
+            Here are selected projects with links, tech stacks, and short highlights.  
+            Use search + filters to quickly find what you need.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Hire / Collaborate</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num" id="statProjects">—</div>
+              <div class="stat__label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">React / Next.js</div>
+              <div class="stat__label">Common Stack</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Python</div>
+              <div class="stat__label">Backend</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__cardTop">
+            <div class="avatar" aria-hidden="true">KA</div>
+            <div>
+              <div class="hero__name">Khenneth S. Alaiza</div>
+              <div class="hero__role">Software Developer</div>
+            </div>
+          </div>
+
+          <div class="hero__tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Redux</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">Django</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">N8N</span>
+          </div>
+
+          <!-- <div class="hero__note">
+            <strong>Tip:</strong> Palitan mo yung sample projects sa `script.js` ng actual links mo.
+          </div> -->
+
+          <div class="hero__quicklinks">
+            <a class="link" href="#projects">⬇ Jump to Projects</a>
+            <a class="link" href="#contact">✉ Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="h2">Projects</h2>
+            <p class="muted">Compilation of websites/systems (live links + details).</p>
+          </div>
+
+          <div class="controls">
+            <div class="control">
+              <label for="search">Search</label>
+              <input id="search" type="search" placeholder="Search title, client, tech, keywords…" />
+            </div>
+
+            <div class="control">
+              <label for="filterTech">Tech</label>
+              <select id="filterTech">
+                <option value="all">All</option>
+              </select>
+            </div>
+
+            <div class="control">
+              <label for="filterType">Type</label>
+              <select id="filterType">
+                <option value="all">All</option>
+                <option value="website">Website</option>
+                <option value="webapp">Web App</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="landing">Landing Page</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid" id="projectsGrid" aria-live="polite"></div>
+
+        <div class="empty" id="emptyState" hidden>
+          <div class="empty__box">
+            <div class="empty__emoji">🕵️‍♂️</div>
+            <div class="empty__title">No matches found</div>
+            <div class="empty__desc">Try removing filters or using different keywords.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="container about">
+        <div class="about__left">
+          <h2 class="h2">About</h2>
+          <p>
+            I build modern web experiences—from landing pages to full systems.
+            I focus on clean UI, reliable backend integration, and fast delivery.
+          </p>
+
+          <div class="about__list">
+            <div class="about__item">
+              <div class="about__icon">✅</div>
+              <div>
+                <div class="about__title">End-to-end delivery</div>
+                <div class="muted">Frontend, backend, deployment, and maintenance.</div>
+              </div>
+            </div>
+
+            <div class="about__item">
+              <div class="about__icon">⚡</div>
+              <div>
+                <div class="about__title">Performance-minded</div>
+                <div class="muted">Optimized assets, caching, and sensible architecture.</div>
+              </div>
+            </div>
+
+            <div class="about__item">
+              <div class="about__icon">🔒</div>
+              <div>
+                <div class="about__title">Security basics</div>
+                <div class="muted">Auth flows, validation, and secure deployment practices.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__right">
+          <div class="card">
+            <h3 class="h3">Skills Snapshot</h3>
+            <div class="chips">
+              <span class="chip">React / Next.js</span>
+              <span class="chip">Redux / Thunk</span>
+              <span class="chip">Laravel</span>
+              <span class="chip">Django</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">CSS</span>
+              <span class="chip">Vercel / cPanel</span>
+              <span class="chip">AWS</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3 class="h3">What I can do</h3>
+            <ul class="bullets">
+              <li>Company/Service websites</li>
+              <li>E-commerce systems + admin</li>
+              <li>Job portals & dashboards</li>
+              <li>Integrations (Mailgun, payment, etc.)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <h2 class="h2">Contact</h2>
+          <p class="muted">
+            Replace the email/links below with your real contact details.
+          </p>
+
+          <div class="contact__rows">
+            <a class="contact__row" href="mailto:khenneth.alaiza@gmail.com">
+              <span>✉</span><span>Email</span><span class="muted">khenneth.alaiza@gmail.com</span>
+            </a>
+            <a class="contact__row" href="https://github.com/" target="_blank" rel="noreferrer">
+              <span>💻</span><span>GitHub</span><span class="muted">https://github.com/khencel</span>
+            </a>
+            <a class="contact__row" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <span>🔗</span><span>LinkedIn</span><span class="muted">https://www.linkedin.com/in/khenneth-alaiza-01130b15a/</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="display: none;">
+          <h3 class="h3">Quick Message</h3>
+          <form id="contactForm">
+            <div class="formrow">
+              <label for="name">Name</label>
+              <input id="name" placeholder="Your name" required />
+            </div>
+            <div class="formrow">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="What do you need?" required></textarea>
+            </div>
+            <button class="btn" type="submit">Copy message</button>
+            <p class="muted tiny" id="copyHint" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="muted">© <span id="year"></span> Khenneth S. Alaiza</span>
+        <a class="muted link" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__head">
+        <div>
+          <!-- <div class="modal__title" id="modalTitle">Project</div> -->
+          <div class="modal__meta" id="modalMeta"></div>
+        </div>
+        <!-- <button class="iconbtn" data-close="true" aria-label="Close">✕</button> -->
+      </div>
+
+      <div class="modal__body">
+        <p id="modalDesc" class="modal__desc"></p>
+
+        <div class="modal__tags" id="modalTags"></div>
+
+        <div class="modal__actions">
+          <!-- <a class="btn" id="modalLive" href="#" target="_blank" rel="noreferrer">Open Live</a> -->
+          <!-- <a class="btn btn--ghost" id="modalRepo" href="#" target="_blank" rel="noreferrer">View Code</a> -->
+        </div>
+
+        <div class="modal__notes" id="modalNotes"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
